@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/index.css">
+</head>
+<body>
+
+    <!-- Information -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xxl-7">
+                <div class="row text-center container-bg">
+                    <div class="col-12">
+                        <h1 class="title-info"><%= title %></h1>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="responsive-layar">
+                            <% if (geolocation.country === "ID") { %>
+                                <p>Sehubungan dengan terkait program Rest API <strong>cloudsmart.my.id</strong> di tunda sementara pada tanggal <b>06 Juli 2023</b> dikarenakan ada masalah pada DNS dan intensif, sampai nanti ada penyelesaian pada sistem akses kami untuk melengkapi bahan-bahan program akses tersebut, dengan ini akan diluncurkan pada tanggal <b>05 Agustus 2023</b>, project kami akan segera kita lakukan dengan terbaik, Terimakasih.</p>
+                            <% } else { %>
+                                <p>In connection with the Rest API program <strong>cloudsmart.my.id</strong> being temporarily postponed on <b>06 July 2023</b> due to problems with DNS access and intensive, until later there is a settlement on our access system to complete the access program materials, with this will be launched on <b>05 August 2023</b>, our project will we will do our best soon, Thank you.</p>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="powered-footer">
+        <span>© Powered by <a href="https://github.com/cakrayp">"Cakra Yudha Pratama"</a></span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

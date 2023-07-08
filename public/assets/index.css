@@ -1,0 +1,72 @@
+html {
+    background: linear-gradient(90deg, rgb(221, 0, 255), rgb(0, 213, 255));
+}
+
+body {
+    background: transparent;
+}
+
+html,
+body {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0%;
+    height: 100%;
+}
+
+.container-bg {
+    background-color: #fff;
+    padding: 1.8rem;
+    border-radius: 5px;
+    font-family: "Montserrat";
+}
+
+.title-info {
+    font-size: 1.5rem;
+}
+.responsive-layar {
+    font-size: 0.75rem;
+}
+.responsive-layar p {
+    margin: 0;
+}
+.responsive-layar p strong {
+    text-decoration: underline;
+}
+
+.powered-footer {
+    position: fixed;
+    color: #fff;
+    align-self: self-end;
+    padding: 2.5rem;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 0.68rem;
+}
+
+.powered-footer span a {
+    color: #fff;
+}
+
+@media (max-width: 580px) {
+    .container-bg {
+        padding: 0.6rem;
+        padding-block: 1.7rem;
+        margin-inline: 10px;
+    }
+
+    .title-info {
+        font-size: 1.2rem;
+    }
+    .responsive-layar {
+        margin-inline: 0;
+        font-size: 0.70rem;
+    }
+
+    .powered-footer {
+        font-size: 0.60rem;
+    }
+}
