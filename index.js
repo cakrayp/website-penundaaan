@@ -11,6 +11,22 @@ app.set('view engine', "ejs");
 app.use(requestIp.mw());
 
 
+// Debug express
+app.use(async(req, res, next) => {
+    // const isApiRoute = /api\/(.+)$/.test(req.path);
+    const RouterNames = "router";  // isApiRoute?"api":/files\/(.+)$/.test(req.path)?"files":"router";
+    console.log(
+        color(`${momentjs.tz("Asia/Jakarta").format()} Express-Action[${RouterNames}]:`, "magenta"),
+        color(req.protocol.toUpperCase(), "yellow"),
+        req.method,
+        color(`"${req.originalUrl}"`),
+        color(`host=${req.hostname}`, "blue"),
+        `fwd=${req.clientIp}`
+    );
+    next();
+});
+
+
 // Router Express 
 app.get("*", async(req, res) => {
     let iplookup_ = await iplookup(req.clientIp);
