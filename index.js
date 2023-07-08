@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 30000;
-const iplookup = require('./lib/iplookup');
 const requestIp = require('request-ip');
 const momentjs = require('moment-timezone');
+const iplookup = require('./lib/iplookup');
+const { color } = require('./lib/color');
 
 
 // Configure express
