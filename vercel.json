@@ -12,5 +12,5 @@
             "dest": "/"
         }
     ],
-    "installCommand": "npm install"
+    "installCommand": "yarn install"
 }
