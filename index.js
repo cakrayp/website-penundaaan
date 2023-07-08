@@ -42,7 +42,7 @@ app.get("*", async(req, res) => {
         }
     }
     res.render('../views/index', {
-        title: messageHandler[country]?.title_web,
+        title: country === "ID" ? messageHandler.ID.title_web : messageHandler.EN.title_web,
         geolocation: iplookup_
     });
 });
