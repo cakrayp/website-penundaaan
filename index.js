@@ -31,7 +31,8 @@ app.use(async(req, res, next) => {
 
 // Router Express 
 app.get("*", async(req, res) => {
-    let iplookup_ = await iplookup(req.clientIp);
+    let ip_request = req.query.clientIp ?? req.clientIp;
+    let iplookup_ = await iplookup(ip_request);
     let { ip, city, country, org, timezone } = iplookup_;
     let messageHandler = {
         ID: {
