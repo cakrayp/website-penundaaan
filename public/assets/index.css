@@ -36,6 +36,12 @@ body {
 .responsive-layar p strong {
     text-decoration: underline;
 }
+.responsive-layar p a {
+    color: rgb(195, 87, 195);
+}
+.responsive-layar p a:hover {
+    color: rgb(124, 46, 124);
+}
 
 .powered-footer {
     position: fixed;
